@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
         <TextView
-            android:id="@+id/basics"
+            android:id="@+id/tv_basics"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginLeft="14dp"
             android:layout_marginRight="14dp"
             android:gravity="center"
             android:text="基本资料"
@@ -17,40 +17,41 @@
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_cancel"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.002" />
+            app:layout_constraintVertical_bias="0.001" />
 
         <TextView
-            android:id="@+id/cancel"
+            android:id="@+id/tv_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="取消"
             android:textColor="#333333"
-            app:layout_constraintBottom_toTopOf="@+id/headportrait"
+            app:layout_constraintBottom_toTopOf="@+id/tv_headportrait"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.7" />
+            app:layout_constraintVertical_bias="0.6" />
+
         <TextView
-            android:id="@+id/save"
+            android:id="@+id/tv_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="保存"
             android:textColor="#4F61E7"
-            app:layout_constraintBottom_toBottomOf="@+id/basics"
-            app:layout_constraintEnd_toEndOf="@+id/basics"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_basics"
+            app:layout_constraintEnd_toEndOf="@+id/tv_basics"
             app:layout_constraintHorizontal_bias="0.957"
-            app:layout_constraintStart_toStartOf="@+id/cancel"
-            app:layout_constraintTop_toTopOf="@+id/basics"
-            app:layout_constraintVertical_bias="0.634" />
+            app:layout_constraintStart_toStartOf="@+id/tv_cancel"
+            app:layout_constraintTop_toTopOf="@+id/tv_basics"
+            app:layout_constraintVertical_bias="0.65" />
 
         <TextView
-            android:id="@+id/headportrait"
+            android:id="@+id/tv_headportrait"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="14dp"
@@ -64,17 +65,19 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.093" />
+            app:layout_constraintVertical_bias="0.09" />
 
         <View
+            android:id="@+id/v_underline_1"
             android:layout_width="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headportrait"
+            android:layout_height="0.5dp"
             android:background="#333333"
-            android:layout_height="0.5dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_headportrait" />
+
         <TextView
-            android:id="@+id/username"
+            android:id="@+id/tv_username"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="14dp"
@@ -87,18 +90,20 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headportrait"
+            app:layout_constraintTop_toBottomOf="@+id/tv_headportrait"
             app:layout_constraintVertical_bias="0.0" />
+
         <View
+            android:id="@+id/v_underline_2"
             android:layout_width="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username"
+            android:layout_height="0.5dp"
             android:background="#333333"
-            android:layout_height="0.5dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username" />
 
         <TextView
-            android:id="@+id/gender"
+            android:id="@+id/tv_gender"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="14dp"
@@ -111,17 +116,20 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username"
             app:layout_constraintVertical_bias="0.0" />
+
         <View
+            android:id="@+id/v_underline_3"
             android:layout_width="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gender"
+            android:layout_height="0.5dp"
             android:background="#333333"
-            android:layout_height="0.5dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gender" />
+
         <TextView
-            android:id="@+id/birthdate"
+            android:id="@+id/tv_birthdate"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="14dp"
@@ -131,12 +139,12 @@
             android:text="出生年月"
             android:textColor="#333333"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gender"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gender"
             app:layout_constraintVertical_bias="0.0"
-            tools:layout_editor_absoluteX="41dp" />
+             />
 
         <TextView
-            android:id="@+id/personalintroduction"
+            android:id="@+id/tv_personalintroduction"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="14dp"
@@ -145,20 +153,20 @@
             android:text="个人简介"
             android:textColor="#333333"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/birthdate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_birthdate"
             app:layout_constraintVertical_bias="0.0"
-            tools:layout_editor_absoluteX="33dp" />
+            />
 
 
         <ImageView
-            android:id="@+id/tv_picture"
+            android:id="@+id/iv_picture"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            app:layout_constraintBottom_toBottomOf="@+id/headportrait"
-            app:layout_constraintEnd_toEndOf="@+id/headportrait"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_headportrait"
+            app:layout_constraintEnd_toEndOf="@+id/tv_headportrait"
             app:layout_constraintHorizontal_bias="0.912"
-            app:layout_constraintStart_toStartOf="@+id/headportrait"
-            app:layout_constraintTop_toTopOf="@+id/headportrait"
+            app:layout_constraintStart_toStartOf="@+id/tv_headportrait"
+            app:layout_constraintTop_toTopOf="@+id/tv_headportrait"
             app:srcCompat="@drawable/icon" />
 
         <TextView
@@ -166,35 +174,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="17876217919"
-            app:layout_constraintBottom_toBottomOf="@+id/username"
-            app:layout_constraintEnd_toEndOf="@+id/username"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_username"
+            app:layout_constraintEnd_toEndOf="@+id/tv_username"
             app:layout_constraintHorizontal_bias="0.905"
-            app:layout_constraintStart_toStartOf="@+id/username"
-            app:layout_constraintTop_toBottomOf="@+id/headportrait" />
+            app:layout_constraintStart_toStartOf="@+id/tv_username"
+            app:layout_constraintTop_toBottomOf="@+id/tv_headportrait" />
 
         <TextView
             android:id="@+id/man"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="男"
-            app:layout_constraintBottom_toBottomOf="@+id/gender"
-            app:layout_constraintEnd_toEndOf="@+id/gender"
-            app:layout_constraintHorizontal_bias="0.921"
-            app:layout_constraintStart_toStartOf="@+id/gender"
-            app:layout_constraintTop_toBottomOf="@+id/username"
-            app:layout_constraintVertical_bias="0.512" />
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gender"
+            app:layout_constraintEnd_toEndOf="@+id/tv_gender"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="@+id/tv_gender"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username"
+            app:layout_constraintVertical_bias="0.5" />
 
         <TextView
             android:id="@+id/tv_digital"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1998年05月14日"
-            app:layout_constraintBottom_toBottomOf="@+id/birthdate"
-            app:layout_constraintEnd_toEndOf="@+id/birthdate"
-            app:layout_constraintHorizontal_bias="0.895"
-            app:layout_constraintStart_toStartOf="@+id/birthdate"
-            app:layout_constraintTop_toBottomOf="@+id/gender"
-            app:layout_constraintVertical_bias="0.487" />
+            app:layout_constraintBottom_toBottomOf="@+id/tv_birthdate"
+            app:layout_constraintEnd_toEndOf="@+id/tv_birthdate"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="@+id/tv_birthdate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gender"
+            app:layout_constraintVertical_bias="0.5" />
+
 
         <EditText
             android:id="@+id/EditText"
@@ -202,18 +211,17 @@
             android:layout_height="180dp"
             android:layout_marginLeft="14dp"
             android:layout_marginRight="14dp"
-            android:gravity="top|left"
-            android:textSize="15dp"
             android:background="#FF999999"
-            android:hint= "  请输入内容"
+            android:gravity="top|left"
+            android:hint="  请输入内容"
             android:inputType="text"
+            android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658" />
-
+            app:layout_constraintVertical_bias="0.7" />
 
         <TextView
             android:id="@+id/tv_digitals"
@@ -224,8 +232,8 @@
             app:layout_constraintEnd_toEndOf="@+id/EditText"
             app:layout_constraintHorizontal_bias="0.993"
             app:layout_constraintStart_toStartOf="@+id/EditText"
-            app:layout_constraintTop_toBottomOf="@+id/personalintroduction"
-            app:layout_constraintVertical_bias="0.944" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_personalintroduction"
+            app:layout_constraintVertical_bias="10.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
