@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UI Study</string>
+    <string name="gender">男</string>
 </resources>
