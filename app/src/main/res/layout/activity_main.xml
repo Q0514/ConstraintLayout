@@ -6,234 +6,232 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/tv_basics"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginRight="14dp"
-            android:gravity="center"
-            android:text="基本资料"
-            android:textColor="#333333"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tv_cancel"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.001" />
+    <TextView
+        android:id="@+id/tv_basics"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="基本资料"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/tv_cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="取消"
-            android:textColor="#333333"
-            app:layout_constraintBottom_toTopOf="@+id/tv_headportrait"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.05"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.6" />
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="取消"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/tv_basics"
+        app:layout_constraintBottom_toBottomOf="@id/tv_basics"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="保存"
-            android:textColor="#4F61E7"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_basics"
-            app:layout_constraintEnd_toEndOf="@+id/tv_basics"
-            app:layout_constraintHorizontal_bias="0.957"
-            app:layout_constraintStart_toStartOf="@+id/tv_cancel"
-            app:layout_constraintTop_toTopOf="@+id/tv_basics"
-            app:layout_constraintVertical_bias="0.65" />
-
-        <TextView
-            android:id="@+id/tv_headportrait"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:gravity="center|left"
-            android:text="头像"
-            android:textColor="#333333"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.09" />
-
-        <View
-            android:id="@+id/v_underline_1"
-            android:layout_width="0dp"
-            android:layout_height="0.5dp"
-            android:background="#333333"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_headportrait" />
-
-        <TextView
-            android:id="@+id/tv_username"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:gravity="center|left"
-            android:text="用户名"
-            android:textColor="#333333"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_headportrait"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <View
-            android:id="@+id/v_underline_2"
-            android:layout_width="0dp"
-            android:layout_height="0.5dp"
-            android:background="#333333"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_username" />
-
-        <TextView
-            android:id="@+id/tv_gender"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:gravity="center|left"
-            android:text="性别"
-            android:textColor="#333333"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_username"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <View
-            android:id="@+id/v_underline_3"
-            android:layout_width="0dp"
-            android:layout_height="0.5dp"
-            android:background="#333333"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_gender" />
-
-        <TextView
-            android:id="@+id/tv_birthdate"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:gravity="center|left"
-            android:text="出生年月"
-            android:textColor="#333333"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_gender"
-            app:layout_constraintVertical_bias="0.0"
-             />
-
-        <TextView
-            android:id="@+id/tv_personalintroduction"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
-            android:gravity="center|left"
-            android:text="个人简介"
-            android:textColor="#333333"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_birthdate"
-            app:layout_constraintVertical_bias="0.0"
-            />
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="保存"
+        android:textColor="#4F61E7"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/tv_basics"
+        app:layout_constraintBottom_toBottomOf="@id/tv_basics"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
-        <ImageView
-            android:id="@+id/iv_picture"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_headportrait"
-            app:layout_constraintEnd_toEndOf="@+id/tv_headportrait"
-            app:layout_constraintHorizontal_bias="0.912"
-            app:layout_constraintStart_toStartOf="@+id/tv_headportrait"
-            app:layout_constraintTop_toTopOf="@+id/tv_headportrait"
-            app:srcCompat="@drawable/icon" />
+    <TextView
+        android:id="@+id/tv_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:gravity="center|left"
+        android:text="头像"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_basics" />
 
-        <TextView
-            android:id="@+id/number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="17876217919"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_username"
-            app:layout_constraintEnd_toEndOf="@+id/tv_username"
-            app:layout_constraintHorizontal_bias="0.905"
-            app:layout_constraintStart_toStartOf="@+id/tv_username"
-            app:layout_constraintTop_toBottomOf="@+id/tv_headportrait" />
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:gravity="center|left"
+        android:text="用户名"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_portrait"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"/>
 
-        <TextView
-            android:id="@+id/man"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="男"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_gender"
-            app:layout_constraintEnd_toEndOf="@+id/tv_gender"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="@+id/tv_gender"
-            app:layout_constraintTop_toBottomOf="@+id/tv_username"
-            app:layout_constraintVertical_bias="0.5" />
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:gravity="center|left"
+        android:text="性别"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        />
 
-        <TextView
-            android:id="@+id/tv_digital"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1998年05月14日"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_birthdate"
-            app:layout_constraintEnd_toEndOf="@+id/tv_birthdate"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="@+id/tv_birthdate"
-            app:layout_constraintTop_toBottomOf="@+id/tv_gender"
-            app:layout_constraintVertical_bias="0.5" />
+    <TextView
+        android:id="@+id/tv_birth"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:gravity="center|left"
+        android:text="出生年月"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gender"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"/>
 
 
-        <EditText
-            android:id="@+id/EditText"
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
-            android:background="#FF999999"
-            android:gravity="top|left"
-            android:hint="  请输入内容"
-            android:inputType="text"
-            android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.7" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        app:layout_constraintTop_toTopOf="@id/tv_portrait"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:srcCompat="@drawable/pear" />
 
-        <TextView
-            android:id="@+id/tv_digitals"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0/100"
-            app:layout_constraintBottom_toBottomOf="@+id/EditText"
-            app:layout_constraintEnd_toEndOf="@+id/EditText"
-            app:layout_constraintHorizontal_bias="0.993"
-            app:layout_constraintStart_toStartOf="@+id/EditText"
-            app:layout_constraintTop_toBottomOf="@+id/tv_personalintroduction"
-            app:layout_constraintVertical_bias="10.0" />
+    <TextView
+        android:id="@+id/tv_user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17665397090"
+        android:textColor="#367386"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_user"
+        app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_gender1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女"
+        android:textColor="#888888"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_gender"
+        app:layout_constraintEnd_toEndOf="@+id/tv_user1" />
+
+    <TextView
+        android:id="@+id/tv_birth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2001年7月9日"
+        android:textColor="#888888"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_birth"
+        app:layout_constraintEnd_toEndOf="@+id/tv_user1" />
+
+    <TextView
+        android:id="@+id/tv_introduction"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center|left"
+        android:text="个人简介"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        app:layout_constraintTop_toBottomOf="@+id/tv_birth" />
+
+    <EditText
+        android:id="@+id/tv_introduction1"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="#77BFBFBF"
+        android:gravity="top|left"
+        android:hint="  请输入自我介绍"
+        android:inputType="text"
+        android:textColor="#888888"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        app:layout_constraintTop_toBottomOf="@+id/tv_introduction" />
+
+
+    <TextView
+        android:id="@+id/tv_introduction2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/100"
+        android:textColor="#888888"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_introduction1"
+        app:layout_constraintEnd_toEndOf="@+id/tv_introduction1" />
+
+    <View
+        android:id="@+id/wire"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#80666666"
+        app:layout_constraintTop_toBottomOf="@+id/tv_basics"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/tv_portrait_wire"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="#80666666"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_portrait"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/tv_user_wire"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        android:background="#80666666"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_user" />
+
+    <View
+        android:id="@+id/tv_gender_wire"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="#80666666"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gender"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/tv_birth_wire"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="#80666666"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_birth"
+        app:layout_constraintStart_toStartOf="@id/tv_portrait"
+        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
+        tools:ignore="MissingConstraints" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

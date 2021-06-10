@@ -1,4 +1,4 @@
-package cn.study.uistudy;
+package cn.study.learinginterface;
 
 import androidx.appcompat.app.AppCompatActivity;
 

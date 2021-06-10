@@ -1,4 +1,4 @@
-package cn.study.uistudy;
+package cn.study.learinginterface;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("cn.study.uistudy", appContext.getPackageName());
+        assertEquals("cn.study.learinginterface", appContext.getPackageName());
     }
 }
