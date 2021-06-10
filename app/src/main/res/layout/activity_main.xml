@@ -166,7 +166,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_birth" />
 
     <EditText
-        android:id="@+id/tv_introduction1"
+        android:id="@+id/tv_introduction_frame"
         android:layout_width="0dp"
         android:layout_height="180dp"
         android:background="@drawable/ic_baseline3"
@@ -181,14 +181,14 @@
 
 
     <TextView
-        android:id="@+id/tv_introduction2"
+        android:id="@+id/tv_introduction_figure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0/100"
         android:textColor="#999999"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_introduction1"
-        app:layout_constraintEnd_toEndOf="@+id/tv_introduction1" />
+        app:layout_constraintBottom_toBottomOf="@+id/tv_introduction_frame"
+        app:layout_constraintEnd_toEndOf="@+id/tv_introduction_frame" />
 
     <View
         android:id="@+id/wire"
