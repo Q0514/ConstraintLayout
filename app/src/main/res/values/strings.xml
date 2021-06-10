@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UI Study</string>
+    <string name="app_Edit1">请输入自我介绍</string>
+    <string name="number">13421585297</string>
+    <string name="sex">男</string>
+    <string name="birthday">2000年04月01日</string>
+</resources>

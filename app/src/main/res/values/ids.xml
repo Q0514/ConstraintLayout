@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_cash_withdrawal_amount" type="id" />
+    <item name="tv_destoon_finance_cash" type="id" />
+    <item name="tv_CNY" type="id" />
+    <item name="view_underline_02" type="id" />
+    <item name="tv_money" type="id" />
+    <item name="tv_can_withdraw" type="id" />
+    <item name="tv_all_withdrawal" type="id" />
+    <item name="view_underline_03" type="id" />
+    <item name="tv_withdrawal_way" type="id" />
+    <item name="tv_alipay_frame" type="id" />
+    <item name="iv_alipay_phot" type="id" />
+    <item name="tv_alipay" type="id" />
+    <item name="im_gou_photo" type="id" />
+    <item name="tv_bank_card_frame" type="id" />
+    <item name="iv_bank_card_phot" type="id" />
+    <item name="tv_bank_card" type="id" />
+    <item name="bt_confirm_withdrawal" type="id" />
+</resources>
