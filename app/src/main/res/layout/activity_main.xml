@@ -54,7 +54,6 @@
         android:layout_height="60dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:gravity="center|left"
         android:text="头像"
         android:textColor="#333333"
@@ -64,9 +63,8 @@
 
     <TextView
         android:id="@+id/tv_user"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:gravity="center|left"
         android:text="用户名"
         android:textColor="#333333"
@@ -74,13 +72,12 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/tv_portrait"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
-        app:layout_constraintEnd_toEndOf="@id/tv_portrait"/>
+        />
 
     <TextView
         android:id="@+id/tv_gender"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:gravity="center|left"
         android:text="性别"
         android:textColor="#333333"
@@ -88,14 +85,12 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/tv_user"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
-        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
         />
 
     <TextView
         android:id="@+id/tv_birth"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:gravity="center|left"
         android:text="出生年月"
         android:textColor="#333333"
@@ -103,36 +98,46 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/tv_gender"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
-        app:layout_constraintEnd_toEndOf="@id/tv_portrait"/>
+        />
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/im_portrait"
         android:layout_width="45dp"
         android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/tv_portrait"
         app:layout_constraintEnd_toEndOf="@id/tv_portrait"
         app:layout_constraintTop_toTopOf="@id/tv_portrait"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         app:srcCompat="@drawable/pear" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/im_arrows"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintStart_toEndOf="@id/im_portrait"
+        app:layout_constraintBottom_toBottomOf="@id/im_portrait"
+        app:layout_constraintTop_toTopOf="@id/im_portrait"/>
 
     <TextView
         android:id="@+id/tv_user1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="17665397090"
-        android:textColor="#367386"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:textColor="#999999"
         android:textSize="15sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_user"
-        app:layout_constraintEnd_toEndOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/im_arrows" />
 
     <TextView
         android:id="@+id/tv_gender1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="女"
-        android:textColor="#888888"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:textColor="#999999"
         android:textSize="15sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_gender"
         app:layout_constraintEnd_toEndOf="@+id/tv_user1" />
@@ -142,14 +147,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2001年7月9日"
-        android:textColor="#888888"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:textColor="#999999"
         android:textSize="15sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_birth"
         app:layout_constraintEnd_toEndOf="@+id/tv_user1" />
 
     <TextView
         android:id="@+id/tv_introduction"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:gravity="center|left"
         android:text="个人简介"
@@ -157,18 +163,17 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
-        app:layout_constraintEnd_toEndOf="@id/tv_portrait"
         app:layout_constraintTop_toBottomOf="@+id/tv_birth" />
 
     <EditText
         android:id="@+id/tv_introduction1"
         android:layout_width="0dp"
         android:layout_height="180dp"
-        android:background="#77BFBFBF"
+        android:background="@drawable/ic_baseline3"
         android:gravity="top|left"
         android:hint="  请输入自我介绍"
         android:inputType="text"
-        android:textColor="#888888"
+        android:textColor="#999999"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
         app:layout_constraintEnd_toEndOf="@id/tv_portrait"
@@ -180,7 +185,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0/100"
-        android:textColor="#888888"
+        android:textColor="#999999"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_introduction1"
         app:layout_constraintEnd_toEndOf="@+id/tv_introduction1" />
@@ -189,15 +194,15 @@
         android:id="@+id/wire"
         android:layout_width="fill_parent"
         android:layout_height="1px"
-        android:background="#80666666"
+        android:background="#999999"
         app:layout_constraintTop_toBottomOf="@+id/tv_basics"
         tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/tv_portrait_wire"
         android:layout_width="0dp"
-        android:layout_height="1px"
-        android:background="#80666666"
+        android:layout_height="1dp"
+        android:background="#999999"
         app:layout_constraintBottom_toBottomOf="@+id/tv_portrait"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
         app:layout_constraintEnd_toEndOf="@id/tv_portrait"
@@ -206,17 +211,17 @@
     <View
         android:id="@+id/tv_user_wire"
         android:layout_width="0dp"
-        android:layout_height="1px"
+        android:layout_height="1dp"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
         app:layout_constraintEnd_toEndOf="@id/tv_portrait"
-        android:background="#80666666"
+        android:background="#999999"
         app:layout_constraintBottom_toBottomOf="@+id/tv_user" />
 
     <View
         android:id="@+id/tv_gender_wire"
         android:layout_width="0dp"
-        android:layout_height="1px"
-        android:background="#80666666"
+        android:layout_height="1dp"
+        android:background="#999999"
         app:layout_constraintBottom_toBottomOf="@+id/tv_gender"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
         app:layout_constraintEnd_toEndOf="@id/tv_portrait"
@@ -225,8 +230,8 @@
     <View
         android:id="@+id/tv_birth_wire"
         android:layout_width="0dp"
-        android:layout_height="1px"
-        android:background="#80666666"
+        android:layout_height="1dp"
+        android:background="#999999"
         app:layout_constraintBottom_toBottomOf="@+id/tv_birth"
         app:layout_constraintStart_toStartOf="@id/tv_portrait"
         app:layout_constraintEnd_toEndOf="@id/tv_portrait"
