@@ -20,7 +20,7 @@
     <View
         android:id="@+id/wire"
         android:layout_width="fill_parent"
-        android:layout_height="1px"
+        android:layout_height="1dp"
         android:background="#80666666"
         app:layout_constraintBottom_toBottomOf="@+id/tv_headline"
         tools:ignore="MissingConstraints" />
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_money"
         android:text="￥ "
@@ -53,8 +53,8 @@
         />
 
     <TextView
-        android:id="@+id/tv_money1"
-        android:layout_width="0dp"
+        android:id="@+id/tv_figure"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="577555.00"
         android:textSize="35sp"
@@ -66,7 +66,7 @@
     <View
         android:id="@+id/tv_money_wire"
         android:layout_width="0dp"
-        android:layout_height="1px"
+        android:layout_height="1dp"
         android:background="#80666666"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/tv_money"
@@ -75,7 +75,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:id="@+id/tv_withdraw_deposit"
         android:text="可提现金额 4250元"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_deposit"
         tools:ignore="MissingConstraints" />
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_withdrawal_way"
         android:text="提现方式"
@@ -127,7 +127,7 @@
         app:layout_constraintStart_toStartOf="@+id/tv_withdrawal_way"
         app:layout_constraintTop_toBottomOf="@+id/tv_withdrawal_way" />
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_alipay"
         android:text="支付宝"
@@ -171,7 +171,7 @@
         app:layout_constraintBaseline_toBaselineOf="@id/tv_frame"
         />
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_bank"
         android:text="银行卡"
@@ -195,13 +195,18 @@
         app:srcCompat="@drawable/bank"
         />
 
-    <Button
+    <TextView
         android:id="@+id/tv_affirm"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:text="确认提现"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/ic_affirm"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/tv_extract"
