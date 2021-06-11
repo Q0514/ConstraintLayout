@@ -23,7 +23,7 @@
     <View
         android:id="@+id/view_underline_01"
         android:layout_width="0dp"
-        android:layout_height="0.5dp"
+        android:layout_height="1dp"
         android:layout_marginTop="60dp"
         android:background="#999999"
         app:layout_constraintBottom_toBottomOf="@+id/tv_destoon_finance_cash"
