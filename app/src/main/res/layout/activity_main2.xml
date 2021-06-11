@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/tv_application_for_withdrawal"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:text="提现申请"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
@@ -193,16 +193,19 @@
         app:layout_constraintTop_toTopOf="@+id/tv_items"
         app:layout_constraintBottom_toBottomOf="@+id/tv_items"/>
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:text="确认提现"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/time"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/tv_cash_withdrawal_amount"
-        app:layout_constraintEnd_toEndOf="@id/tv_cash_withdrawal_amount"/>
-
-
+        app:layout_constraintStart_toStartOf="@id/tv_application_for_withdrawal"
+        app:layout_constraintEnd_toEndOf="@id/tv_application_for_withdrawal"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
