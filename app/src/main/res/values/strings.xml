@@ -2,6 +2,16 @@
     <string name="app_name">UI Study</string>
     <string name="app_Edit1">请输入自我介绍</string>
     <string name="number">13421585297</string>
-    <string name="sex">男</string>
-    <string name="birthday">2000年04月01日</string>
+    <string name="female">男</string>
+    <string name="birth_date">2000年04月01日</string>
+    <string name="title_name">基本资料</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="head_img">头像</string>
+    <string name="user_name">用户名</string>
+    <string name="phone_num">13421585297</string>
+    <string name="gender">性别</string>
+    <string name="birth">出生年月</string>
+    <string name="introduction">个人简介</string>
+    <string name="input_num">0/100</string>
 </resources>
