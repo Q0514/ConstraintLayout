@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UIStudy">
+        <activity android:name=".TestOkhttpActivity1"></activity>
         <activity android:name=".TestOkhttpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
