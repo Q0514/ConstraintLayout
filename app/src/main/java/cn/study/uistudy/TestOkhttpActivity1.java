@@ -9,6 +9,8 @@ import android.util.Log;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;
+import java.net.URI;
+import java.util.Map;
 
 import cn.study.uistudy.util.HttpBinService;
 import okhttp3.ResponseBody;
@@ -30,15 +32,16 @@ public class TestOkhttpActivity1 extends AppCompatActivity {
         retrofit = new Retrofit.Builder().baseUrl("https://wanandroid.com/wenda/comments/14500/json").build();
         httpBinService = retrofit.create(HttpBinService.class);
     }
+
     private void initRequest() {
 
-        retrofit2.Call<ResponseBody>call=httpBinService.get("lance","123");
+        retrofit2.Call<ResponseBody> call = httpBinService.get("lance", "123");
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
 
                 try {
-                    Log.i("111111","onResponse:"+response.body().string());
+                    Log.i("111111", "onResponse:" + response.body().string());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -52,5 +55,4 @@ public class TestOkhttpActivity1 extends AppCompatActivity {
         });
 
     }
-
 }
